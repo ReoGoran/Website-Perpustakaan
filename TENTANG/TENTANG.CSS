@@ -2,19 +2,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
 }
 
 body {
   background-color: #f9f9f9;
+  font-family: 'Poppins', sans-serif;
   color: #333;
 }
 
 /* Header */
 header {
   background-color: #ffffff;
-  padding: 10px 30px;
-  color: rgb(0, 0, 0);
+  padding: 10px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,20 +23,22 @@ header {
 .logo {
   display: flex;
   align-items: center;
-  font-weight: bold;
-  font-size: 20px;
+  font-weight: 600;
+  font-size: 18px;
 }
 
 .menu a {
   margin: 0 10px;
   text-decoration: none;
   color: #333;
+  font-weight: 500;
 }
 
 .search-box input {
-  padding: 0.5rem;
+  padding: 7px 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
+  font-size: 14px;
 }
 
 /* Hero */
@@ -47,82 +48,115 @@ header {
   align-items: center;
   background: #40465e;
   color: white;
-  padding: 2rem;
+  padding: 3rem 4rem;
   flex-wrap: wrap;
 }
 
 .hero-text h1 {
   font-size: 2rem;
+  font-weight: 600;
   margin-bottom: 0.5rem;
 }
 
+.hero-text p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
 .hero-img img {
-  width: 200px;
+  width: 220px;
 }
 
 /* Intro */
 .intro {
-  padding: 2rem;
-  text-align: center;
+  padding: 2rem 6rem 2rem 6rem; /* atas-kanan-bawah-kiri */
+  text-align: left;
   font-size: 1rem;
-  line-height: 1.6;
+  line-height: 1.7;
+  max-width: none; /* hilangkan pembatas lebar */
+  margin: 0; /* hilangkan margin tengah */
 }
+
+
 
 /* Quote */
 .quote {
   background-color: #eeeeee;
   text-align: center;
-  padding: 2rem;
+  padding: 2rem 3rem;
   font-style: italic;
   font-size: 1.1rem;
 }
 
 /* Adventure */
 .adventure {
-  padding: 2rem;
+  padding: 3rem 4rem;
   text-align: center;
 }
 
 .title-box h2 {
-  font-family: 'Comic Sans MS', cursive;
-  font-size: 1.8rem;
-  margin-bottom: 0.5rem;
+  font-family: 'Schoolbell', cursive;
+  font-size: 2rem;
+  margin-bottom: 0.2rem;
+  color: #333;
+}
+
+.title-box p {
+  font-size: 1.5rem;
+  color: #999;
+  margin-top: -0.2rem;
 }
 
 .promo-box {
   margin-top: 2rem;
   background: #f1f1f1;
-  padding: 1.5rem;
+  padding: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
-  border-radius: 10px;
+  gap: 2rem;
+  border-radius: 12px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .promo-box img {
-  width: 60px;
+  width: 70px;
 }
 
 .promo-text h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.promo-text p {
+  font-size: 0.95rem;
   margin-bottom: 0.5rem;
 }
 
 .promo-text button {
-  margin-top: 0.5rem;
-  padding: 0.5rem 1rem;
-  background: #555;
+  padding: 0.5rem 1.2rem;
+  background: #333;
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
+  font-weight: 500;
   cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.promo-text button:hover {
+  background: #555;
 }
 
 /* Advantages */
 .advantages {
   display: flex;
-  justify-content: space-around;
-  padding: 2rem;
+  justify-content: center;
+  gap: 3rem;
+  padding: 3rem 2rem;
   background: #fff;
   flex-wrap: wrap;
 }
@@ -130,12 +164,21 @@ header {
 .advantage {
   text-align: center;
   max-width: 200px;
-  margin: 1rem;
 }
 
 .advantage img {
   width: 50px;
   margin-bottom: 1rem;
+}
+
+.advantage h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.advantage p {
+  font-size: 0.95rem;
 }
 
 /* Footer */
@@ -149,4 +192,6 @@ footer a {
   margin: 0 1rem;
   text-decoration: none;
   color: #333;
+  font-size: 0.95rem;
+  font-weight: 500;
 }
