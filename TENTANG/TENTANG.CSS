@@ -6,8 +6,9 @@
 
 body {
   background-color: #f9f9f9;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #333;
+  font-size: 14px;
 }
 
 /* Header */
@@ -23,22 +24,50 @@ header {
 .logo {
   display: flex;
   align-items: center;
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: 500;
+  font-size: 24px;
+  font-family: 'Roboto Medium', sans-serif;
+}
+
+.logo img {
+  border-radius: 50%;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.search-section {
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
 .menu a {
   margin: 0 10px;
   text-decoration: none;
   color: #333;
-  font-weight: 500;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .search-box input {
-  padding: 7px 10px;
+  padding: 7px 30px 7px 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
   font-size: 14px;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  font-size: 16px;
 }
 
 /* Hero */
@@ -69,51 +98,64 @@ header {
 
 /* Intro */
 .intro {
-  padding: 2rem 6rem 2rem 6rem; /* atas-kanan-bawah-kiri */
+  padding: 2rem 6rem;
   text-align: left;
-  font-size: 1rem;
+  font-size: 20px;
   line-height: 1.7;
-  max-width: none; /* hilangkan pembatas lebar */
-  margin: 0; /* hilangkan margin tengah */
+  font-family: 'Poppins', sans-serif;
 }
 
-
-
-/* Quote */
-.quote {
-  background-color: #eeeeee;
+/* Highlight Section (gabungan quote + adventure + promo) */
+.highlight-section {
+  background-color: #f0f0f0;
+  padding: 3rem 2rem;
   text-align: center;
-  padding: 2rem 3rem;
+}
+
+.highlight-section .quote {
+  background: none;
+  padding: 0 0 2rem 0;
   font-style: italic;
   font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-/* Adventure */
-.adventure {
-  padding: 3rem 4rem;
-  text-align: center;
+.highlight-section .fixed-box {
+  background-color: #e0dedb;
+  border-radius: 15px;
+  padding: 2rem;
+  max-width: 700px;
+  margin: 2rem auto;
 }
 
-.title-box h2 {
+.highlight-section .adventure-text {
   font-family: 'Schoolbell', cursive;
-  font-size: 2rem;
-  margin-bottom: 0.2rem;
-  color: #333;
+  font-size: 28px;
+  color: #2d2d2d;
+  line-height: 1.5;
 }
 
-.title-box p {
-  font-size: 1.5rem;
-  color: #999;
-  margin-top: -0.2rem;
-}
-
-.promo-box {
-  margin-top: 2rem;
+.highlight-section .promo-box {
   background: #f1f1f1;
   padding: 2rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  border-radius: 12px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.promo-box {
+  background: #f0f0f0; /* disamakan seperti background di desain */
+  padding: 2rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
   gap: 2rem;
   border-radius: 12px;
   max-width: 700px;
@@ -123,17 +165,26 @@ header {
 
 .promo-box img {
   width: 70px;
+  flex-shrink: 0;
+}
+
+.promo-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .promo-text h3 {
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 0.3rem;
+  text-align: left;
 }
 
 .promo-text p {
   font-size: 0.95rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
+  text-align: left;
 }
 
 .promo-text button {
@@ -154,15 +205,24 @@ header {
 /* Advantages */
 .advantages {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 3rem;
   padding: 3rem 2rem;
   background: #fff;
-  flex-wrap: wrap;
+  text-align: center;
+  position: relative;
+}
+
+.keunggulan-title {
+  width: 100%;
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin-bottom: 2rem;
 }
 
 .advantage {
-  text-align: center;
   max-width: 200px;
 }
 
@@ -179,6 +239,7 @@ header {
 
 .advantage p {
   font-size: 0.95rem;
+  color: #666;
 }
 
 /* Footer */
