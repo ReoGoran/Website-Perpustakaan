@@ -189,7 +189,7 @@ header {
 
 .promo-text button {
   padding: 0.5rem 1.2rem;
-  background: #333;
+  background: #706C6C;
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -244,7 +244,7 @@ header {
 
 /* Footer */
 footer {
-  background-color: #ddd;
+  background-color: #DBD6D6;
   padding: 1rem;
   text-align: center;
 }
