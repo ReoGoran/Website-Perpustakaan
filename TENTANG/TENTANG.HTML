@@ -5,23 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HOOLibrary</title>
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Schoolbell&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="tentang.css" />
 </head>
 <body>
 
   <header>
     <div class="logo">
-      <img src="/img/logo.png" alt="HOOLibrary Logo" width="40" style="margin-right: 10px;" />
+      <img src="/img/logo.png" alt="HOOLibrary Logo" />
       <span>HOOLibrary</span>
     </div>
-    <nav class="menu">
-      <a href="/homepage/homepage.html">Beranda</a>
-      <a href="/tentang/tentang.html">Tentang</a>
-      <a href="/informasi/informasi.html">Layanan</a>
-    </nav>
-    <div class="search-box">
-      <input type="text" placeholder="Cari di sini..." />
+    <div class="search-section">
+      <nav class="menu">
+        <a href="/homepage/homepage.html">Beranda</a>
+        <a href="/tentang/tentang.html">Tentang</a>
+        <a href="/informasi/informasi.html">Layanan</a>
+      </nav>
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" placeholder="Cari di sini..." />
+      </div>
     </div>
   </header>
 
@@ -43,26 +47,28 @@
     </p>
   </section>
 
-  <section class="quote">
-    <p>"Menjadi pusat informasi, edukasi, dan literasi yang unggul dalam mendukung pengembangan ilmu pengetahuan dan budaya baca masyarakat."</p>
-  </section>
+  <!-- Gabungan Bagian Quote, Adventure, Promo -->
+  <section class="highlight-section">
+    <div class="quote">
+      <p>"Menjadi pusat informasi, edukasi, dan literasi<br>yang unggul dalam mendukung pengembangan ilmu pengetahuan dan budaya baca masyarakat."</p>
+    </div>
 
-  <section class="adventure">
-    <div class="title-box">
-      <h2>Temukan Petualangan Baru Di<br>Setiap Halaman</h2>
-      <p>---</p>
+    <div class="title-box fixed-box">
+      <h2 class="adventure-text">Temukan Petualangan Baru Di<br>Setiap Halaman</h2>
     </div>
+
     <div class="promo-box">
-      <img src="/img/logo1.png" alt="Thumb" />
-      <div class="promo-text">
-        <h3>Hal Baru Yang Akan Datang!</h3>
-        <p>Jangan lewatkan program keanggotaan terbaru bulan ini!!</p>
-        <button>Detail</button>
-      </div>
-    </div>
-  </section>
+  <img src="/img/logo1.png" alt="Thumb" />
+  <div class="promo-text">
+    <h3>Hal Baru Yang Akan Datang!</h3>
+    <p>Jangan lewatkan program keanggotaan terbaru bulan ini!!</p>
+    <button>Detail</button>
+  </div>
+</div>
+
 
   <section class="advantages">
+    <h2 class="keunggulan-title">Keunggulan</h2>
     <div class="advantage">
       <img src="/img/search.png" alt="Search Icon" />
       <h4>Fitur Searching</h4>
@@ -71,12 +77,12 @@
     <div class="advantage">
       <img src="/img/buku.png" alt="Book Icon" />
       <h4>Koleksi Buku</h4>
-      <p>Koleksi buku terlengkap sesuai kebutuhan anda</p>
+      <p>Koleksi buku terupdate sesuai kebutuhan anda</p>
     </div>
     <div class="advantage">
       <img src="/img/akses.png" alt="Access Icon" />
       <h4>Akses Mudah</h4>
-      <p>Akses perpustakaan kapan pun & di mana pun</p>
+      <p>Akses yang mudah dan cepat</p>
     </div>
   </section>
 
