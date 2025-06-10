@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 10px 30px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 200px
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.search-box {
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.hero {
+    background-color: #606671;
+    padding: 40px 30px;
+    color: white;
+    text-align: center;
+}
+
+.btn-group {
+    margin-top: 15px;
+}
+
+.btn-group button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background-color: #2f2f2f;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main {
+    padding: 30px;
+}
+
+.contact-info {
+    margin-bottom: 30px;
+}
+
+.contact-info h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.contact-info ul {
+    list-style: none;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.map iframe {
+    border-radius: 8px;
+    width: 100%;
+}
+
+footer {
+    background-color: #e6e6e6;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+footer a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+}
