@@ -8,6 +8,7 @@
 body {
     background-color: #f9f9f9;
     color: #333;
+    overflow-x: hidden;
 }
 
 header {
@@ -18,6 +19,7 @@ header {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #ddd;
+    
 }
 
 .logo img {
@@ -45,12 +47,110 @@ nav a {
     border: 1px solid #ccc;
 }
 
-.hero {
-    background-color: #606671;
-    padding: 40px 30px;
-    color: white;
-    text-align: center;
+
+
+.hero-kontak {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  padding: 30px;
+  padding: 1rem;
 }
+
+.logo-kontak {
+  width: 80px;
+  height: 80px;
+  border-radius: 100px
+}
+
+.konten-kontak h2, .konten-kontak p {
+  margin: 0;
+}
+
+/*=======================================================*/
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #40465e;
+  color: white;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-img img {
+  width: 100px;
+  border-radius: 200px
+} 
+
+.button {
+  background-color: #4c5566;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main {
+  padding: 40px;
+  background-color: white;
+  padding: 1.2rem;
+  
+}
+
+.info-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 60px;
+  gap: 40px;
+  font-size: 53px;
+  font-weight: bold
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 30px;
+  font-size: 25px;
+  margin-right: 15px;
+}
+
+.info-item i {
+  font-size: 25px;
+}
+
+.info-content span {
+  display: block;
+  font-weight: bold;
+   flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: auto;
+  width: max-content;
+  font-size: 30px;
+  padding-right: 80px; /* geser ke kanan */
+}
+
+
+
+/*=======================================================*/
 
 .btn-group {
     margin-top: 15px;
@@ -86,8 +186,9 @@ main {
 }
 
 .map iframe {
-    border-radius: 8px;
+    border-radius: 18px;
     width: 100%;
+    margin-top: 30px;
 }
 
 footer {
