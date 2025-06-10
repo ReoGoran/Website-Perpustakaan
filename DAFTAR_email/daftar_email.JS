@@ -11,9 +11,9 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
   const password = document.getElementById('password').value;
 
   // Simpan ke localStorage
-  localStorage.setItem('userEmail', email);
-  localStorage.setItem('userPassword', password);
+  localStorage.setItem('hakim', email);
+  localStorage.setItem('hakim123', password);
 
   // Pindah ke halaman homepage
-  window.location.href = "homepage.html";
+  window.location.href = "../HOMEPAGE/HOMEPAGE.html";
 });
