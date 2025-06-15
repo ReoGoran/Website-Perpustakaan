@@ -15,5 +15,5 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
   localStorage.setItem('hakim123', password);
 
   // Pindah ke halaman homepage
-  window.location.href = "../HOMEPAGE/HOMEPAGE.html";
+  window.location.href = "../LOGIN/login.html";
 });
